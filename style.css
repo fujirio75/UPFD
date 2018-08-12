@@ -1,6 +1,8 @@
 head, body {
-	width: 100%;
+	width: 100%;	
+	max-width: 1980px;
 	height: 100%;
+	margin: auto;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -16,11 +18,16 @@ div {
 	display: block;
 }
 
-
-
 h2,h3 {
 	display: inline-block;
+	margin: auto;
 	padding: 0.48em;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.flex {
+	display: flex;
 }
 
 .white {
@@ -45,10 +52,58 @@ h2,h3 {
 	-webkit-border-radius: 50%;
 }
 
-/* top */
-	#top {
-
+/* header */
+	.header-container {
+		position: absolute;
+		width: 100%;
+		background-color: rgba(30,42,146,0.9);
+		background-blend-mode: multiply;
+		clip-path: url(#head-bg);
+		overflow: hidden;
+		z-index: 2;
 	}
+
+	header .flex {
+		justify-content: space-between;
+	}
+
+	header img {
+		left: 0;
+	}
+
+	header .link {
+		right: 0;
+		margin-top: 36px;
+	}
+
+	header a {
+		margin-left:40px;
+	}
+
+/* top */
+	.top-container {
+		display: block;
+		width: 100%;
+		height: 800px;
+		background-image: url('img/top.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		clip-path: url(#top-bg);
+		overflow: hidden;
+		z-index: -1;
+	}
+
+	#top {
+		width: 100%;
+		height: 800px;
+		background-color: rgba(21,198,153,0.6);
+		background-blend-mode: multiply;
+		overflow: hidden;
+	}
+
+	#top section {
+	}
+
 
 	#top .marker {
 		background-color: #1E2A92;
@@ -57,11 +112,22 @@ h2,h3 {
 
 /* issue */
 	#issue {
-
+		margin: 40px 0;
+		width: 100%;
+		height: 800px;
+		margin-top: -60px;
 	}
 
 	#issue h2 {
 		background-color: #000;
+	}
+
+	#issue .flex {
+		flex-direction: row;
+	}
+
+	#issue p {
+		width: 450;
 	}
 
 
@@ -127,11 +193,32 @@ h2,h3 {
 
 @media (min-width: 1024px){
 	section {
+		position: relative;
 		width: 1024px;
 		margin: auto;
 	}
 
 	h1 {
 
+	}
+
+	h2 {
+
+	}
+
+	h3 {
+
+	}
+
+	h4 {
+		
+	}
+
+	#top h1 {
+		bottom: 0;
+	}
+
+	#issue {
+		text-align: center;
 	}
 }
