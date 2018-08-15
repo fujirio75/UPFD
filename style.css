@@ -1,6 +1,6 @@
 head, body {
-	width: 100%;	
-	max-width: 1980px;
+	width: 2560;	
+	max-width: 2560px;
 	height: 100%;
 	margin: auto;
 	top: 0;
@@ -18,12 +18,31 @@ div {
 	display: block;
 }
 
+svg {
+	margin: auto;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 46px;
+}
+
+h1 .marker {
+	padding: 11px;
+}
+
 h2,h3 {
 	display: inline-block;
 	margin: auto;
-	padding: 0.48em;
-	font-size: 24px;
+	padding: 23px 32px;
+	font-size: 36px;
 	font-weight: 700;
+}
+
+
+p {
+	font-size: 15px;
 }
 
 .flex {
@@ -43,7 +62,7 @@ h2,h3 {
 }
 
 .marker {
-	padding: 0.48em;
+	
 }
 
 .circle {
@@ -53,13 +72,13 @@ h2,h3 {
 }
 
 /* header */
-	.header-container {
+	header {
 		position: absolute;
-		width: 100%;
-		background-color: rgba(30,42,146,0.9);
-		background-blend-mode: multiply;
-		clip-path: url(#head-bg);
-		overflow: hidden;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
 		z-index: 2;
 	}
 
@@ -83,25 +102,11 @@ h2,h3 {
 /* top */
 	.top-container {
 		display: block;
-		width: 100%;
-		height: 800px;
-		background-image: url('img/top.jpg');
+		background: url('img/top-blend.svg'), url('img/top.jpg') no-repeat;
+		background-blend-mode: multiply;
 		background-size: cover;
-		background-repeat: no-repeat;
 		clip-path: url(#top-bg);
 		overflow: hidden;
-		z-index: -1;
-	}
-
-	#top {
-		width: 100%;
-		height: 800px;
-		background-color: rgba(21,198,153,0.6);
-		background-blend-mode: multiply;
-		overflow: hidden;
-	}
-
-	#top section {
 	}
 
 
@@ -112,8 +117,8 @@ h2,h3 {
 
 /* issue */
 	#issue {
-		margin: 40px 0;
-		width: 100%;
+		margin: 40px auto;
+		width: 960px;
 		height: 800px;
 		margin-top: -60px;
 	}
@@ -122,12 +127,19 @@ h2,h3 {
 		background-color: #000;
 	}
 
-	#issue .flex {
-		flex-direction: row;
+	#issue p {
+		font-weight: 500;
+		line-height: 34px;
 	}
 
-	#issue p {
-		width: 450;
+	#issue .flex {
+		flex-direction: row;
+		width: 960px;
+		margin: auto;
+	}
+
+	#issue img {
+ 		margin-right: 95px;
 	}
 
 
@@ -149,6 +161,8 @@ h2,h3 {
 	}
 
 	#hire .circle {
+		width: 38px;
+		height: 38px;
 		color: #15C699;
 		background-color: #FFF;
 	}
@@ -212,10 +226,6 @@ h2,h3 {
 
 	h4 {
 		
-	}
-
-	#top h1 {
-		bottom: 0;
 	}
 
 	#issue {
