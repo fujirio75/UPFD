@@ -18,30 +18,39 @@
 	<meta property="og:description" content="UpperFieldは就労意欲のある外国人と人手不足に悩む労働の現場をマッチングさせる会社です。">
 
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
 		<section class="flex">
 			<img src="#" alt="logo">
-			<a href="#employee" class="white">求職者の方</a>
-			<a href="#hire" class="white">求人担当者の方</a>
-			<a href="#contact" class="white">お問合せ</a>
+			<div class="link">
+				<a href="#employee" class="white">求職者の方</a>
+				<a href="#hire" class="white">求人担当者の方</a>
+				<a href="#contact" class="white">お問合せ</a>
+			</div>
 		</section>
 	</header>
-	<div id="top">
-		<section>
-			<img src="#" alt="copy">
-			<h1 class="white">Upper Fieldは<span class="marker">就労意欲のある外国人</span>と<span class="marker">人手不足に悩む労働の現場</span><br>をマッチングさせる会社です。</h2>
-		</section>
+	<div class="top-container">
+		<div id="top">
+			<section>
+				<h1 class="white">Upper Fieldは<span class="marker">就労意欲のある外国人</span>と<span class="marker">人手不足に悩む労働の現場</span><br>をマッチングさせる会社です。</h1>
+			</section>
+		</div>
+		<svg width="2560" height="920" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<clipPath id="top-bg">
+				<polygon points="0,0 2560,0 2560,360 0,920" stroke="black" fill="none"/>
+			</clipPath>
+		</svg>
 	</div>
 	<div id="issue">
 		<section>
 			<div><h2 class="white">外国人就労の課題</h2></div>
-			<img src="#" alt="copy">
+			<img src="img/issue-c.svg" alt="copy">
 			<div class="flex black">
+				<img src="img/issue.jpg" alt="img" width="464" height="297">
 				<p>就労目的で来日した外国人の70%以上は就職が叶わず帰国します。一方労働の現場では人手不足が深刻化しています。(株)アッパーフィールドは両者の橋渡し役になることにより問題解決を図ります。外国人に対しては具体的な就労先の紹介のみならず、在留資格ごとに様々なアドバイスを行うことにより選択肢を提供します。求人側企業には外国人を採用する際の様々なトラブル要因を払拭し労働力の確保をサポートいたします。今後の就労環境を鑑み積極的に活動してまいります。</p>
-				<img src="#" alt="img">
 			</div>
 		</section>
 	</div>
@@ -53,7 +62,7 @@
 			<div class="point">
 				<h3 class="white"><span class="marker"><span class="circle">!</span>POINT</span>複数の日本語学校などとの連携</h3>
 				<div class="flex">
-					<img src="#" alt="img">
+					<img src="img/issue.jpg" alt="img" width="464" height="297">
 					<p class="black">複数の日本語学校、専門学校、大学と関係性を構築しております。外国人の就労希望に合わせて就労先を案内しています。在留資格「留学」者にはアルバイト先を、「技術・人文知識・国際業務」者には派遣先または就職先を、「経営・管理」者には請負業務先を紹介しております。同時に住居も提供しておりますので自ずと情報交換は活発になりモチベーションアップに一躍かってくれています。パートナーを探し企業を志し「経営・管理」の在留資格に変更する方もいます。さらに、自分たちのネットワークを通し志が同じ仲間がどんどん集まってくるという状態です。</p>
 				</div>
 			</div>
@@ -61,7 +70,7 @@
 				<h3 class="white"><span class="marker"><span class="circle">!</span>POINT</span>日本人スタッフが現場をフォロー</h3>
 				<div class="flex">
 					<p class="black">言葉の障壁や生まれ育った文化の違いなどによって現場でトラブルが起きないように配慮が必要です。外国人とコミニュケーションが取れる日本人(またはほぼ日本人と同等の外国人)スタッフがトラブルが起きないように現場をフォローしています。よってクライアント様は日本人への指示出しですみますのでコミュニケーションの心配はありません。</p>
-					<img src="#" alt="img">
+					<img src="img/issue.jpg" alt="img" width="464" height="297">
 				</div>
 			</div>
 			<div class="point">
@@ -76,7 +85,7 @@
 	<div id="employee">
 		<section>
 			<div><h2 class="blue">求職者の方向け情報</h2></div>
-			<img src="#" alt="">
+			<img src="img/employee-h.svg" alt="">
 			<div id="step">
 				<h3 class="white"><span class="marker">STEP</span></h3>
 				<p class="black"><span class="circle">1</span>仕事を紹介します。</p>
