@@ -1,6 +1,4 @@
 head, body {
-	width: 2560;	
-	max-width: 2560px;
 	height: 100%;
 	margin: auto;
 	top: 0;
@@ -206,6 +204,11 @@ p {
 
 
 @media (min-width: 1024px){
+	head, body {
+		width: 2560;	
+		max-width: 2560px;
+	}
+
 	section {
 		position: relative;
 		width: 1024px;
@@ -231,4 +234,43 @@ p {
 	#issue {
 		text-align: center;
 	}
+}
+
+
+@media (max-width: 1023px){
+	head, body {
+		width: 750px;	
+	}
+
+	header, section {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	#issue {
+		display: none;
+	}
+
+	#hire {
+		display: none;
+	}
+
+	#employee {
+		background: url('img/employee-bg-750.svg') center top no-repeat;
+		background-size: 750px;
+		padding-top: 160px;
+		height: 1000px;
+	}
+
+	#employee img {
+		width: 650px;
+		margin-top: 50px; 
+	}
+
+	#management {
+		background: url('img/management-bg-750.svg') center top no-repeat;
+		background-size: 750px;
+		height: 1000px;
+	}
+
 }
