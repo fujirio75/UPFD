@@ -18,28 +18,50 @@
 	<meta property="og:description" content="UpperFieldは就労意欲のある外国人と人手不足に悩む労働の現場をマッチングさせる会社です。">
 
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="top-bg">
-		
 	</div>
 	<header>
 		<section class="flex">
 			<img src="img/logo-w.svg" alt="logo">
-			<div class="link">
+			<div class="link dt">
 				<a href="#employee" class="white">求職者の方</a>
 				<a href="#hire" class="white">求人担当者の方</a>
 				<a href="#contact" class="white">お問合せ</a>
 			</div>
+			<div class="link sp">
+				<nav role="navigation">
+					<div id="menuToggle">
+						<input type="checkbox" />
+						<span></span>
+						<span></span>
+						<span></span>
+						<ul id="menu">
+							<a href="#employee"><li>求職者の方</li></a>
+							<a href="#hire"><li>求人担当者の方</li></a>
+							<a href="#contact"><li>お問合せ</li></a>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</section>
+		<div class="top-clip">
+			<svg width="2560" height="920" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<clipPath id="top-bg">
+					<polygon points="0,0 2560,0 2560,360 0,920" stroke="black" fill="none"/>
+				</clipPath>
+			</svg>
+		</div>
 	</header>
 	<div class="top-container">
 		<div id="top">
 			<section>
-				<h1 class="white">Upper Fieldは<span class="marker">就労意欲のある外国人</span>と<span class="marker">人手不足に悩む労働の現場</span><br>をマッチングさせる会社です。</h1>
-				<a href="#">
+				<h1><img src="img/top-text.svg" alt="#"></h1>
+				<a href="#contact">
 					<img src="img/button-1.svg">
 				</a>
 				<p>
@@ -48,11 +70,94 @@
 				<img src="">
 			</section>
 		</div>
-		<svg width="2560" height="920" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<clipPath id="top-bg">
-				<polygon points="0,0 2560,0 2560,360 0,920" stroke="black" fill="none"/>
-			</clipPath>
-		</svg>
+	</div>
+	<div id="about">
+		<section class="dt">
+			<img src="img/graph1.png" class="dt">
+			<img src="img/description1.png">
+			<div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">1</p>
+						<h2>就職希望者には就労先の斡旋を行います。</h2>
+					</div>
+					<span class="arrow"></span>
+					<a href="#employee"><img src="img/btn8.png"></a>
+				</div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">2</p>
+						<h2>経営者には事業拡大のための支援を行います。</h2>
+					</div>
+					<span class="arrow"></span>
+					<a href="#management"><img src="img/btn7.png"></a>
+				</div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">3</p>
+						<h2>コンプライアンスを遵守しながら、人手不足に悩む企業に外国人労働力を提供します。</h2>
+					</div>
+					<span class="arrow"></span>
+					<a href="#hire"><img src="img/btn5.png"></a>
+				</div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">4</p>
+						<h2>外国人には住居を紹介し安定的な生活を提供します。</h2>
+					</div>
+					<span class="arrow"></span>
+					<a href="#hire"><img src="img/btn5.png"></a>
+				</div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">5</p>
+						<h2>OJTなどの研修制度が有りますので外国人のスキルアップを図ります。</h2>
+					</div>
+					<span class="arrow"></span>
+					<a href="#hire"><img src="img/btn6.png"></a>
+				</div>
+			</div>
+		</section>
+		<section class="sp">
+			<img src="img/graph1-sp.png">
+			<div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">1</p>
+						<h2>就職希望者には就労先の斡旋を行います。</h2>
+					</div>
+					<a href="#employee"><img src="img/btn8.png"></a>
+				</div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">2</p>
+						<h2>経営者には事業拡大のための支援を行います。</h2>
+					</div>
+					<a href="#management"><img src="img/btn7.png"></a>
+				</div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">3</p>
+						<h2>コンプライアンスを遵守しながら、人手不足に悩む企業に外国人労働力を提供します。</h2>
+					</div>
+					<a href="#hire"><img src="img/btn5.png"></a>
+				</div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">4</p>
+						<h2>外国人には住居を紹介し安定的な生活を提供します。</h2>
+					</div>
+					<a href="#hire"><img src="img/btn5.png"></a>
+				</div>
+				<div class="menu">
+					<div class="flex">
+						<p class="circle">5</p>
+						<h2>OJTなどの研修制度が有りますので外国人のスキルアップを図ります。</h2>
+					</div>
+					<a href="#hire"><img src="img/btn6.png"></a>
+				</div>
+			</div>
+		</section>
 	</div>
 	<div id="hire">
 		<div class="hire-title">
@@ -61,49 +166,68 @@
 				<img src="img/hire-1.svg" alt="copy">
 			</section>
 		</div>
-		<section>
+		<section class="hire-content">
+			<img src="img/graph2-sp.png" class="sp">
 			<div class="point">
 				<h3 class="white"><span class="marker"><span class="circle">!</span>POINT</span>複数の日本語学校などと連携。優秀な外国人との繋がりを確保。</h3>
-				<div class="flex">
-					<img src="img/issue.jpg" alt="img" width="464" height="297">
+				<div class="dt-flex">
+					<img src="img/point2.jpg" alt="img" width="464" height="297" class="sp">
 					<p class="black">複数の日本語学校、専門学校、大学と関係性を構築しております。外国人の就労希望に合わせて就労先を案内しています。在留資格「留学」者にはアルバイト先を、「技術・人文知識・国際業務」者には派遣先または就職先を、「経営・管理」者には請負業務先を紹介しております。同時に住居も提供しておりますので自ずと情報交換は活発になりモチベーションアップに一躍かってくれています。パートナーを探し企業を志し「経営・管理」の在留資格に変更する方もいます。さらに、自分たちのネットワークを通し志が同じ仲間がどんどん集まってくるという状態です。</p>
+					<img src="img/graph2.png" alt="img" class="dt">
 				</div>
 			</div>
 			<div class="point">
 				<h3 class="white"><span class="marker"><span class="circle">!</span>POINT</span>日本人スタッフが現場をフォロー</h3>
-				<div class="flex">
+				<div class="dt-flex">
+					<img class="sp" src="img/point1.jpg" alt="img" width="464" height="297">
 					<p class="black">言葉の障壁や生まれ育った文化の違いなどによって現場でトラブルが起きないように配慮が必要です。外国人とコミニュケーションが取れる日本人(またはほぼ日本人と同等の外国人)スタッフがトラブルが起きないように現場をフォローしています。よってクライアント様は日本人への指示出しですみますのでコミュニケーションの心配はありません。</p>
-					<img src="img/issue.jpg" alt="img" width="464" height="297">
+					<img class="dt" src="img/image2.png" alt="img" class="dt">
 				</div>
 			</div>
 			<div class="point">
 				<h3 class="white flex"><span class="marker"><span class="circle">!</span>POINT</span>語学から業務上の法律まで、各種研修も</h3>
-				<div class="flex">
-					<img src="#" alt="img">
+				<div class="dt-flex">
+					<img src="img/table.png" alt="img">
 					<p class="black">将来の事業拡大を目指し研修制度を用意しております。語学研修のみならず、業務に関する法律上の知識など様々なカリキュラムを用意しています。on-JT、off-JTどちらも可能でクライアント企業様と協議の上行います。時給補助の助成制度がありますので活用をお勧めいたします。</p>
 				</div>
 			</div>
 		</section>
 	</div>
 	<div id="employee">
-		<section>
-			<div><h2 class="blue">求職者の方向け情報</h2></div>
-			<img src="img/employee-h.svg" alt="">
-			<div id="step">
-				<h3 class="white"><span class="marker">STEP</span></h3>
-				<p class="black"><span class="circle">1</span>仕事を紹介します。</p>
-				<p class="black"><span class="circle">2</span>まずは生活の安定、希望の職種に就けるようサポートします。</p>
-				<p class="black"><span class="circle">3</span>ビザ更新時のアドバイスや希望に合わせた在留資格の見直しなどのサポートを行います。</p>
-				<p class="black"><span class="circle">4</span>生活環境や希望に合わせて住まいを提供します。</p>
-			</div>
-		</section>
+		<div class="employee-bg dt">
+			<img src="img/employee-bg.svg">
+		</div>
+			<section>
+				<div><h2 class="blue">求職者の方向け情報</h2></div>
+				<img src="img/employee-h.svg" alt="">
+				<div id="step">
+					<h3 class="white"><span class="marker">STEP</span></h3>
+					<div class="flex">
+						<span class="circle">1</span>
+						<p class="black">仕事を紹介します。</p>
+					</div>
+					<div class="flex">
+						<span class="circle">2</span>
+						<p class="black">まずは生活の安定、希望の職種に就けるようサポートします。</p>
+					</div>
+					<div class="flex">
+						<span class="circle">3</span>
+						<p class="black">ビザ更新時のアドバイスや希望に合わせた在留資格の見直しなどのサポートを行います。</p>
+					</div>
+					<div class="flex">
+						<span class="circle">4</span>
+						<p class="black">生活環境や希望に合わせて住まいを提供します。</p>
+					</div>
+				</div>
+			</section>
 	</div>
 	<div id="management">
 		<section>
 			<div><h2 class="white">在留資格が「経営・管理」の方向け情報</h2></div>
 			<p class="notice">資格が「技術・人文知識・国際業務」、または「特定活動」で、「経営・管理」に変更可能な方も対象です。</p>
-			<img src="#" alt="copy">
-			<div class="flex">
+			<img src="img/mana-text.svg" alt="copy">
+			<img src="img/Group-8-sp.png">
+		<!--	<div class="flex" >
 				<div>
 					<div class="flex">
 						<img src="#" alt="checkbox">
@@ -140,7 +264,7 @@
 						<p class="black">税務や雇用関係とか不安だ</p>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</section>
 	</div>
 	<img src="img/contact-top.svg" alt="bg" class="tri">
@@ -177,7 +301,7 @@
 					<p>お電話にて随時お問い合わせを受け付けております。<br>ぜひ、お気軽にお電話ください。</p>
 					<img src="img/number.svg" alt="03-6455-5509">
 					<p>通話料金はお客様のご負担となります</p>
-					<button href="#">電話をする</button>
+					<button href="tel:0364555509" class="sp">電話をする</button>
 					<div class="res">
 						<div class="flex">
 							<h4>受付時間</h4>
@@ -185,7 +309,7 @@
 						</div>
 						<p class="red">土休日及び年末年始は受け付けておりません。</p>
 					</div>
-					<button class="#" data-clipboard-text="03-6455-5509">
+					<button class="dt" data-clipboard-text="03-6455-5509">
 						クリップボードにコピー
 					</button>
 				</div>
@@ -223,4 +347,17 @@
 			<p class="white">© Upper Field All rights reserved.</p>
 		</section>
 	</footer>
+
+	<script type="text/javascript">
+		$(function(){
+			$('a[href^="#"]').click(function(){
+				var speed = 500;
+				var href= $(this).attr("href");
+				var target = $(href == "#" || href == "" ? 'html' : href);
+				var position = target.offset().top;
+				$("html, body").animate({scrollTop:position}, speed, "swing");
+				return false;
+			});
+		});
+	</script>
 </body>
